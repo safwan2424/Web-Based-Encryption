@@ -1,0 +1,157 @@
+/* Import Google Fonts and Font Awesome */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', 'Roboto', 'Helvetica', 'Arial', sans-serif; 
+    color: #838181;
+    font-size: 16px;
+    background-color: #666774;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:link, a:visited, a:active {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #0056b3;
+}
+
+.black10pointcourier {
+    font-family: 'Courier New', Courier, monospace; 
+    color: #333;
+    font-size: 14px;        
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    color: #343a40;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: wheat;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.dropzone {
+    border: 3px dashed #6c757d;
+    column-gap: 1rem;
+    width: 70%;
+    padding: 40px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+.divTablefullwidth, .divTable {
+    display: table;
+    width: 100%;
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableCell {
+    display: table-cell;
+    padding: 10px;
+    font-size: 19px;
+    color: #4b4c4e;
+}
+
+.divTableBody {
+    display: table-row-group;
+}
+
+.greenspan {
+    color: #28a745;    
+}
+
+.redspan {
+    color: #dc3545;    
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: wheat#fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Open Sans', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    color: #343a40;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .divTableCell {
+        display: block;
+        width: 100%;
+    }
+
+    .divTableRow {
+        display: block;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .dropzone {
+        padding: 20px;
+    }
+}
